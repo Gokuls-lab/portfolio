@@ -1,5 +1,5 @@
 import logo from './img/image.png'
-import css from './css/home.css'
+import './Chat.css'
 
 function Nav(){
 return(
