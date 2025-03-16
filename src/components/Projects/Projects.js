@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import cupin from "../../Assets/Projects/cupin.webp";
+import chat from "../../Assets/Projects/AiPage.png";
+import ai from "../../Assets/Projects/ai.jpg";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import book from "../../Assets/Projects/book.jpg";
+import Certificate from "../../Assets/Projects/certificate.webp";
+
+import voting from "../../Assets/Projects/voting.webp";
 
 function Projects() {
   return (
@@ -23,68 +25,67 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={voting}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Facial Recognition-Based Voting System"
+              description="A secure voting system using DeepFace and FaceNet for facial recognition. It ensures voter authentication, prevents impersonation, and enhances election security by using AI-driven face-matching techniques."
+              ghLink="https://github.com/Gokuls-lab/FacialVote"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Certificate}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Blockchain-Based Certificate Generation & Validation"
+              description="A Smart India Hackathon (SIH) 2024 project using Ethereum blockchain and Ganache to securely issue and verify digital certificates. It ensures authenticity and tamper-proof validation, integrating with the Digital Locker System."
+              ghLink="#"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={cupin}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Cupin - AI Relationship Doctor"
+              description="A relationship analysis app using AI to provide insights into conversations. It offers personalized relationship advice, detects patterns, and enhances communication understanding, launched on the Play Store."
+              ghLink="#"
+              demoLink="https://play.google.com/store/apps/details?id=co.median.android.wjkojk"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ai}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="AI Voice Assistant"
+              description="A hackathon project focused on building an interactive AI voice assistant using OpenAI’s Whisper for speech-to-text, sapi5 for text-to-speech, Gemini API for responses, and Google APIs for language translation and image recognition."
+              ghLink="#"
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={book}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Library Software with AI Search & Raspberry Pi Display"
+              description="A library management system featuring an AI-based book search using a CSV dataset. Includes a Raspberry Pi 5-powered display and a 3D model of a moving robot with a screen for easy navigation between bookshelves. It uses Gemini AI api and sentence-transformers/all-MiniLM-L6-v2 for book search"
+              ghLink="#"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={chat}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Enliten Academy"
+              description="A TNPSC exam preparation app and website offering AI-powered mock tests, quizzes, and study materials. Built using Vercel, React, Python, and Firebase and JWT authentication it aims to provide an interactive and accessible learning experience with Gen AI 'Heuristic thinking' !!"
+              ghLink="https://github.com/abilove10/enliten-academy"
+              demoLink="https://enliten.org.in"
             />
           </Col>
         </Row>
